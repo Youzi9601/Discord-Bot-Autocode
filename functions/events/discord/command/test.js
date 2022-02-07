@@ -1,0 +1,15 @@
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+await lib.discord.channels['@0.2.2'].typing.create({
+  channel_id: `${context.params.event.channel_id}`,
+});
+await lib.discord.channels['@0.2.2'].messages.create({
+  channel_id: `${context.params.event.channel_id}`,
+  content: `** **`,
+  embed: {
+    title: `Minecraft 顏色代碼`,
+    color: `1604557`,
+    description: `**Color • Main Hex • Shadow Hex**\n<:black:734293805502562383> \`&0\` • \`#000000\` • \`#000000\`\n<:dark_blue:734293805465075843> \`&1\` • \`#0000AA\` • \`#00002A\`\n<:dark_green:734293805360218153> \`&2\` • \`#00AA00\` • \`#002A00\`\n<:dark_aqua:734293805402161202> \`&3\` • \`#00AAAA\` • \`#002A2A\`\n<:dark_red:734293804995182668> \`&4\` • \`#AA0000\` • \`#2A0000\`\n<:dark_purple:734293805032931390> \`&5\` • \`#AA00AA\` • \`#2A002A\`\n<:gold:734293805423132774> \`&6\` • \`#FFAA00\` • \`#3F2A00\`\n<:gray:734293805028605973> \`&7\` • \`#AAAAAA\` • \`#2A2A2A\`\n<:dark_gray:734293805364150372> \`&8\` • \`#555555\` • \`#151515\`\n<:blue:734293805137920041> \`&9\` • \`#5555FF\` • \`#15153F\`\n<:green:734293805443842088> \`&a\` • \`#55FF55\` • \`#153F15\`\n<:aqua:734293805439647804> \`&b\` • \`#55FFFF\` • \`#153F3F\`\n<:red:734293805133725788> \`&c\` • \`#FF5555\` • \`#3F1515\`\n<:pink:734293805393772594> \`&d\` • \`#FF55FF\` • \`#3F153F\`\n<:yellow:734293805095845959> \`&e\` • \`#FFFF55\` • \`#3F3F15\`\n<:white:734293804915359786> \`&f\` • \`#FFFFFF\` • \`#3F3F3F\`\n\n<a:obfuscatedone:874707376429744188><a:obfuscatedtwo:874707376186470491><a:obfuscatedthree:874707376266162287><a:obfuscatedfour:874707376882741248><:obfuscatedfive:874707376329085000> \`&k\` • Obfuscated\n<:boldone:874702922523500554><:boldtwo:874702922833879060><:boldthree:874702922305376260><:boldfour:874702922301202533><:boldfive:874702922544455680> \`&l\` • **Bold**\n<:strikethroughone:874704307382026241><:strikethroughtwo:874704307335872532><:strikethroughthree:874704307105189949><:strikethroughfour:874704307382026242><:strikethroughfive:874704307017121855> \`&m\` • ~~Strikethrough~~\n<:underlinedone:874703813242675210><:underlinedtwo:874703813347520582><:underlinedthree:874703813288816650><:underlinedfour:874703813318156359><:underlinedfive:874703813687259136> \`&n\` • __Underline__\n<:italicone:874703145454952529><:italictwo:874703145714987018><:italicthree:874703145459122276><:italicfour:874703145069080607><:italicfive:874703145475915806> \`&o\` • *Italic*\n<:normalone:874702623150858240><:normaltwo:874702623222149160><:normalthree:874702622890819646><:normalfour:874702622890819645><:normalfive:874702623155044463> \`&r\` •  Reset`,
+  },
+});
+const {log_command} = require('log.js');
+await log_command(`text`,context.params.event.member.user.username,context.params.event.member.user.id ,context.params.event.channel_id,context.params.event.guild_id );

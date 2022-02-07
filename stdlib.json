@@ -1,0 +1,357 @@
+{
+  "name": "youzi-org/youzi-bot",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/dm/dm-send.js": {
+      "name": "discord.dm.create"
+    },
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/message/selectmenu/help-menu.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "help-menu"
+      }
+    },
+    "functions/events/discord/message/selectmenu/server-info-menu.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "server-info-menu"
+      }
+    },
+    "functions/events/discord/message/all.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/message/button/create_new_threads.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "create_new_threads"
+      }
+    },
+    "functions/events/scheduler/status_update.js": {
+      "name": "scheduler.xminutely",
+      "subtype": {
+        "frequency": "10 minutes"
+      }
+    },
+    "functions/events/discord/message/button/help-delete_list.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "help_delete_list"
+      }
+    },
+    "functions/events/discord/message/create/prefix.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "@柚子醬#8969"
+      }
+    },
+    "functions/events/discord/message/contextmenu/translate-zh_TW.js": {
+      "name": "discord.message.contextmenu.interaction",
+      "subtype": {
+        "name": "翻譯成中文"
+      }
+    },
+    "functions/events/discord/message/contextmenu/translate-en.js": {
+      "name": "discord.message.contextmenu.interaction",
+      "subtype": {
+        "name": "翻譯成英文"
+      }
+    },
+    "functions/events/discord/bot/playback/finished.js": {
+      "name": "discord.bot.playback.finished"
+    },
+    "functions/events/discord/voice/state/update.js": {
+      "name": "discord.voice.state.update"
+    },
+    "functions/events/discord/bot/guild/joined0.js": {
+      "name": "discord.bot.guild.joined"
+    },
+    "functions/events/autocode/self/deployed0.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/command/ban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ban"
+      }
+    },
+    "functions/events/discord/command/bot.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "bot"
+      }
+    },
+    "functions/events/discord/command/burn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "burn"
+      }
+    },
+    "functions/events/discord/command/calc.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "calc"
+      }
+    },
+    "functions/events/discord/command/clear.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "clear"
+      }
+    },
+    "functions/events/discord/command/dm-embed.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "dm-embed"
+      }
+    },
+    "functions/events/discord/command/dm.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "dm"
+      }
+    },
+    "functions/events/discord/command/eight-ball.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "8ball"
+      }
+    },
+    "functions/events/discord/command/global.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "global"
+      }
+    },
+    "functions/events/discord/command/google.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "google"
+      }
+    },
+    "functions/events/discord/command/hank.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "hank"
+      }
+    },
+    "functions/events/discord/command/help-commands.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help-commands"
+      }
+    },
+    "functions/events/discord/command/help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/events/discord/command/invite.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "invite"
+      }
+    },
+    "functions/events/discord/command/kick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kick"
+      }
+    },
+    "functions/events/discord/command/minecraft-player.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "minecraft-player"
+      }
+    },
+    "functions/events/discord/command/music.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "music"
+      }
+    },
+    "functions/events/discord/command/ping.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ping"
+      }
+    },
+    "functions/events/discord/command/poll.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "poll"
+      }
+    },
+    "functions/events/discord/command/race.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "race"
+      }
+    },
+    "functions/events/discord/command/random-user.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "random-user"
+      }
+    },
+    "functions/events/discord/command/report.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "report"
+      }
+    },
+    "functions/events/discord/command/server-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "server-info"
+      }
+    },
+    "functions/events/discord/command/setup.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "setup"
+      }
+    },
+    "functions/events/discord/command/suggestion.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "suggestion"
+      }
+    },
+    "functions/events/discord/command/summon.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "summon"
+      }
+    },
+    "functions/events/discord/command/temp_vc.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "vc"
+      }
+    },
+    "functions/events/discord/command/test.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "test"
+      }
+    },
+    "functions/events/discord/command/user-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "user-info"
+      }
+    },
+    "functions/events/discord/command/weather.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "weather"
+      }
+    },
+    "functions/events/discord/command/levels.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "levels"
+      }
+    },
+    "functions/events/discord/command/rank.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "rank"
+      }
+    },
+    "functions/events/discord/command/covid-19.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "covid-19"
+      }
+    },
+    "functions/events/discord/message/selectmenu/covid-19-menu.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "covid-menu"
+      }
+    },
+    "functions/events/discord/user/contextmenu/user-info.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "成員資訊"
+      }
+    },
+    "functions/events/discord/message/contextmenu/report.js": {
+      "name": "discord.message.contextmenu.interaction",
+      "subtype": {
+        "name": "舉報此訊息"
+      }
+    },
+    "functions/events/discord/command/tic-tac-toe.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "tic-tac-toe"
+      }
+    },
+    "functions/events/discord/command/giveaway.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "giveaway"
+      }
+    },
+    "functions/events/discord/message/reaction/add.js": {
+      "name": "discord.message.reaction.add"
+    }
+  },
+  "env": [
+    {
+      "name": "maintain",
+      "description": "維修模式?"
+    },
+    {
+      "name": "ADMINROLE",
+      "description": "Admin Role ID"
+    },
+    {
+      "name": "Bot_owner_id",
+      "description": "機器人的主人"
+    },
+    {
+      "name": "GUILDID",
+      "description": "GUILDID"
+    },
+    {
+      "name": "GUILD_ID",
+      "description": "Server ID"
+    },
+    {
+      "name": "REPORTLOG_CHANNEL",
+      "description": "where reports will get saved/logged"
+    },
+    {
+      "name": "UNWANTED_WORDS",
+      "description": "髒話列表"
+    },
+    {
+      "name": "VOICE_CATEGORY_ID",
+      "description": "分類"
+    },
+    {
+      "name": "VOICE_CHANNEL_ID",
+      "description": "頻道"
+    },
+    {
+      "name": "logging",
+      "description": "紀錄頻道"
+    },
+    {
+      "name": "servermembercount",
+      "description": "count"
+    },
+    {
+      "name": "invite_url",
+      "description": "url"
+    }
+  ]
+}

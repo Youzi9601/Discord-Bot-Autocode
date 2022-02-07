@@ -1,0 +1,21 @@
+{
+  "name": "youzi-apps",
+  "author": "Jacob Lee",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "moment-timezone": "^0.5.34",
+    "ez-calculator": "^1.1.1",
+    "discord.js": "^13.6.0",
+    "client": "^0.0.1",
+    "axios": "^0.25.0",
+    "g-i-s": "^2.1.6",
+    "autocode-discordjs": "^1.1.0",
+    "@iamtraction/google-translate": "^1.1.2",
+    "iso-639-1": "^2.1.12",
+    "log.js": "^0.0.0",
+    "ytdl-core": "^4.10.0",
+    "yt-search": "^2.10.3",
+    "autocode-puppeteer": "^2.0.1"
+  }
+}
