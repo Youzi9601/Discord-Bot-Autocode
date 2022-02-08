@@ -3,7 +3,7 @@ console.log(`已觸發`);
 /**
  * 這是互動程式
  */
-if (false) {
+if (true) {
   await lib.discord.contextmenu['@0.0.0'].items.bulkOverwrite({
     items: [
       //message
@@ -40,7 +40,7 @@ if (false) {
   });
 }
 
-if (false) {
+if (true) {
   // **DO NOT RUN** UNLESS YOU KNOW WHAT YOU ARE DOING
 
   let keyValues = (await lib.utils.kv['@0.1.16'].entries()).filter((entry) =>
@@ -175,7 +175,7 @@ if (false) {
  * 命令
  */
 //command
-if (false) {
+if (true) {
   console.log(`setting commands`);
   await lib.discord.commands['@0.1.0'].bulkOverwrite({
     commands: [
